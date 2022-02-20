@@ -17721,7 +17721,7 @@ function() {
                     }(this), 40), this.addChild(n), this.moreBtn = n = new e(this.game, 0, 0, this.game.lang.locale("More Games"), function(a) {
                         return function() {
                             //return window.open("http://kizi.com/?ch=3307&utm_source=GameDistribution", "_blank")
-                            window.external.notify("OpenMoreGames");
+                            alert("http://kizi.com/?ch=3307&utm_source=GameDistribution")
                         }
                     }(this), 30), this.addChild(n), this.walkthrouhgBtn = n = new e(this.game, 0, 0, this.game.lang.locale("Walkthrough"), function(a) {
                         return function() {
@@ -28171,8 +28171,8 @@ box2d.b2MotorJoint.prototype.SetAngularOffset = function(a) {
                     return this.levelState = a
                 }, f.prototype.create = function() {
                     var level = parseInt(this.levelState.data.id);
-                    if (!isNaN(level) && level % 2 == 0 && level != 0)
-                        window.external.notify("Rate");
+                    if (false)
+                        alert("The laws of the universe do not apply in javascript.");
 
                     return this.levelState.success ? (this.game.progress.update(this.levelState), this.menu = new c(this.game, this.levelState), this.menu.show()) : (this.menu = new d(this.game, this.levelState), this.menu.show())
                 }, f.prototype.layoutContent = function() {
